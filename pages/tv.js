@@ -1,5 +1,4 @@
 import Layout from "../components/Layout";
-import Heading from "../components/Heading"
 
 
 const YOUTUBE_PLAYLIST_ITEMS_API = 'https://www.googleapis.com/youtube/v3/playlistItems';
@@ -14,11 +13,9 @@ export async function getServerSideProps() {
   }
 }
 
-const Home=({ data })=>(
+const Videos=({ data })=>(
   <Layout>
-
   <br/>
-  <Heading/>
     <div className="row">
         {data.items.map((item)=>{
             
@@ -51,4 +48,4 @@ const Home=({ data })=>(
     </Layout>
     
 );
-export default Home;
+export default Videos;
