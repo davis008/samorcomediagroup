@@ -8,7 +8,7 @@ const Marketing=()=>(
         <br/>
     <Container>
   <Row>
-    <Col><img src="./barner1.jpg" class="img-fluid" alt="Responsive image"></img></Col>
+    <Col><img src="./barner1.png" class="img-fluid" alt="Responsive image"></img></Col>
     <Col><img src="./bannner.jpg" class="img-fluid" alt="Responsive image"></img></Col>
   </Row>
 </Container>
