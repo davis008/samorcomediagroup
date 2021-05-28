@@ -3,6 +3,7 @@ const Marketing=()=>(
     
     <Layout>
         <br/>
+    <p>a</p>
       <img src="./bannner.jpg" class="img-fluid" alt="Responsive image"></img>
     </Layout>
 );
