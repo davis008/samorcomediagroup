@@ -8,7 +8,7 @@ const Auditions=()=>(
     
     <Layout>
         <br/>
-  <Form>
+  <Form action="mailto:info@samorcomedia.co.ke">
   
    
   <InputGroup className="mb-3">
