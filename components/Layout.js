@@ -33,7 +33,7 @@ const Layout=({children})=>(
         <Link href="/tv">TV</Link>
         <Link href="/team">Team</Link>
         <Link href="/marketing">Marketing</Link>
-        
+        <Link href="/auditions">Auditions</Link>
         </header>
         {children}
         <footer>
