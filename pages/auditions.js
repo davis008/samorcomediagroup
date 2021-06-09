@@ -23,13 +23,13 @@ const Auditions=()=>(
   </InputGroup>
   
   <Form.Group controlId="formBasicPhone">
-    <Form.Label>Email address</Form.Label>
+    <Form.Label>Phone</Form.Label>
     <Form.Control type="tel" placeholder="Enter Phone" />
   </Form.Group>
  
   <Form.Group controlId="formBasicLocation">
-    <Form.Label>Email address</Form.Label>
-    <Form.Control type="text" placeholder="Enter eLocation" />
+    <Form.Label>Residence</Form.Label>
+    <Form.Control type="text" placeholder="Enter Location" />
   </Form.Group>
  
   <Form.Group controlId="formBasicEmail">
