@@ -13,33 +13,60 @@ function Auditions(){
       return <p>Thanks for joining!</p>;
   }
   return (
-      <form onSubmit={handleSubmit}>
-      <label htmlFor="email">
-        Email Address
-      </label>
-      <input
-        id="email"
-        type="email" 
-        name="email"
-      />
-      <ValidationError 
+    <Layout>
+      <Form onSubmit={handleSubmit}>
+
+    <Form.Group controlId="name">
+    <Form.Label>Full Name</Form.Label>
+    <Form.Control type="text" placeholder="brian kuria" name="fullname"/>
+  </Form.Group>
+
+  <Form.Group controlId="email">
+    <Form.Label>Email address</Form.Label>
+    <Form.Control type="email" placeholder="john@example.com" name="email" />
+    <ValidationError 
         prefix="Email" 
         field="email"
         errors={state.errors}
       />
-      <textarea
-        id="message"
-        name="message"
-      />
-      <ValidationError 
-        prefix="Message" 
-        field="message"
+  </Form.Group>
+
+  <Form.Group controlId="phone">
+    <Form.Label>Phone</Form.Label>
+    <Form.Control type="phone" placeholder="0700000000" name="phone"/>
+    <ValidationError 
+        prefix="Phone" 
+        field="phone"
         errors={state.errors}
       />
-      <button type="submit" disabled={state.submitting}>
+  </Form.Group>
+
+  <Form.Group controlId="role">
+    <Form.Label>Role</Form.Label>
+    <Form.Control type="text" placeholder="Lisa" name="role"/>
+    <ValidationError 
+        prefix="Role" 
+        field="role"
+        errors={state.errors}
+      />
+  </Form.Group>
+  <Form.Group controlId="residence">
+    <Form.Label>Residence</Form.Label>
+    <Form.Control type="text" placeholder="Donholm" name="residence"/>
+    <ValidationError 
+        prefix="Residence" 
+        field="residence"
+        errors={state.errors}
+      />
+  </Form.Group>
+
+  <Button variant="success" type="submit" disabled={state.submitting}>
         Submit
-      </button>
-    </form>
+      </Button>
+
+      
+    </Form>
+    </Layout>
 );
 }
 export default Auditions;
