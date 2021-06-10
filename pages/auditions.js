@@ -8,7 +8,8 @@ const Auditions=()=>(
     
     <Layout>
         <br/>
-  <Form action="mailto:info@samorcomedia.co.ke">
+  <Form action="https://formspree.io/f/xpzkrwbz"
+  method="POST">
   
    
   <InputGroup className="mb-3">
